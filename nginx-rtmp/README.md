@@ -15,6 +15,9 @@
 ## 配置
 * 配置文件目录: `/usr/local/nginx/conf`
 * 修改配置文件: `/usr/local/nginx/conf/nginx.conf`
+* `mkdir /usr/local/nginx/html/myapp`
 
 ## 测试
-* `ffmpeg -re -i time.flv -c copy -f flv rtmp://10.0.5.134/myapp/mystream`
+* 推流: `ffmpeg -re -i time.flv -c copy -f flv rtmp://10.0.5.134/myapp/mystream`
+* 播放rtmp: `rtmp://10.0.5.134/myapp/mystream`
+* 播放hls: `http://10.0.5.134/myapp/mystream.m3u8`
